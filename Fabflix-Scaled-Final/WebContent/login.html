@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" type="image/png" href="resources/favicon.png">
+        <link rel="stylesheet" href="./styles.css" type="text/css">
+
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
+        <title>Welcome to FabFlix ~ Please Log In</title>
+    </head>
+    <body>
+        <div>
+            <ul class="nav_bar">
+                <li class="logo"><a href="mainPage.html"><img src="resources/FabflixLogo.png" alt="Fabflix Logo"></a></li>
+                <li class="home"><a href="mainPage.html">Home</a></li>
+                <li class="movie_list"><a href="movieList.html">Movies</a></li>
+                <li class="search_bar"><input type="text" placeholder=" Search . . . "></li>
+                <li class="sign_up"><a href="signup.html">Sign Up</a></li>
+                <li class="log_in"><a href="login.html">Log In</a></li>
+            </ul>
+        </div>
+
+        <div class="first">
+
+            <div id="recaptcha_error_message">Verify Recaptcha to Submit</div>
+
+            <div id="login_error_message"></div>
+
+            <form id="login_form" method="post" action="form-recaptcha">
+                <label><b>Username</b></label>
+                <label>
+                    <input name="username" placeholder="Enter Username" type="email">
+                </label>
+                <br>
+                <label><b>Password</b></label>
+                <label>
+                    <input name="password" placeholder="Enter Password" type="password">
+                </label>
+                <br>
+                <input type="submit" value="Login">
+
+                <div>
+                    <hr>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6Le4qPQUAAAAADuCenKuCQUqyF2-C_BD-xWRQ9vi" data-callback="recapCallback"></div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <ul class="footer">
+                <li><a href="movieList.html">About Us</a></li>
+                <li><a href="movieList.html">Contact</a></li>
+                <li><a href="movieList.html">Careers</a></li>
+                <li><a href="movieList.html">Legal</a></li>
+                <li><a href="movieList.html">Help</a></li>
+            </ul>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <script src="login.js"></script>
+    </body>
+</html>

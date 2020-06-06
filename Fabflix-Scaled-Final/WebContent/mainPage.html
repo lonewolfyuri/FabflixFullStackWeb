@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" type="image/png" href="resources/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>FabFlix Main Page</title>
+    </head>
+    <body>
+        <div>
+            <ul class="nav_bar">
+                <li class="logo"><a href="mainPage.html"><img src="resources/Fabflix Logo.png" alt="Fabflix Logo"></a></li>
+                <li class="home"><a href="mainPage.html">Home</a></li>
+                <li class="movie_list"><a href="movieList.html?past=true">Movies</a></li>
+                <li class="search_bar"><form id="search" action="movieList.html"><input type="text" placeholder=" Search . . . " id="autocomplete" name="search_input" onkeypress="handleSearch"></form></li>
+                <li class="log_out"><a href="logout.html">Log Out</a></li>
+                <li class="account"><a href="account.html">Account</a></li>
+                <li class="cart"><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+
+        <div class="first">
+            <h1 class="main_header">Search by Condition</h1>
+
+            <div class="searching">
+                <form id="search_fields" action="movieList.html">
+                    <input type="text" placeholder=" Search Titles . . . " id="searchTitle" name="search_title">
+                    <input type="text" placeholder=" Search Years . . . " id="searchYear" name="search_year">
+                    <input type="text" placeholder=" Search Directors . . . " id="searchDirector" name="search_director">
+                    <input type="text" placeholder=" Search Stars . . . " id="searchStar" name="search_star">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <h1 class="main_header">Browse by Category</h1>
+
+            <div class="browsing">
+                <div class="browse_by_genre">
+                    <table id="genre_table" class="table-striped">
+                        <thead>
+                            <tr>
+                                <th>Genre</th>
+                            </tr>
+                        </thead>
+                        <tbody id="genre_list_body"></tbody>
+                    </table>
+                </div>
+                <div class="browse_by_title">
+                    <table id="title_table" class="table-striped">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                            </tr>
+                        </thead>
+                        <tbody id="title_list_body">
+                            <tr><th><a href="movieList.html?title=*">*</a></th></tr>
+                            <tr><th><a href="movieList.html?title=0">0</a></th></tr>
+                            <tr><th><a href="movieList.html?title=1">1</a></th></tr>
+                            <tr><th><a href="movieList.html?title=2">2</a></th></tr>
+                            <tr><th><a href="movieList.html?title=3">3</a></th></tr>
+                            <tr><th><a href="movieList.html?title=4">4</a></th></tr>
+                            <tr><th><a href="movieList.html?title=5">5</a></th></tr>
+                            <tr><th><a href="movieList.html?title=6">6</a></th></tr>
+                            <tr><th><a href="movieList.html?title=7">7</a></th></tr>
+                            <tr><th><a href="movieList.html?title=8">8</a></th></tr>
+                            <tr><th><a href="movieList.html?title=9">9</a></th></tr>
+                            <tr><th><a href="movieList.html?title=a">A</a></th></tr>
+                            <tr><th><a href="movieList.html?title=b">B</a></th></tr>
+                            <tr><th><a href="movieList.html?title=c">C</a></th></tr>
+                            <tr><th><a href="movieList.html?title=d">D</a></th></tr>
+                            <tr><th><a href="movieList.html?title=e">E</a></th></tr>
+                            <tr><th><a href="movieList.html?title=f">F</a></th></tr>
+                            <tr><th><a href="movieList.html?title=g">G</a></th></tr>
+                            <tr><th><a href="movieList.html?title=h">H</a></th></tr>
+                            <tr><th><a href="movieList.html?title=i">I</a></th></tr>
+                            <tr><th><a href="movieList.html?title=j">J</a></th></tr>
+                            <tr><th><a href="movieList.html?title=k">K</a></th></tr>
+                            <tr><th><a href="movieList.html?title=l">L</a></th></tr>
+                            <tr><th><a href="movieList.html?title=m">M</a></th></tr>
+                            <tr><th><a href="movieList.html?title=n">N</a></th></tr>
+                            <tr><th><a href="movieList.html?title=o">O</a></th></tr>
+                            <tr><th><a href="movieList.html?title=p">P</a></th></tr>
+                            <tr><th><a href="movieList.html?title=q">Q</a></th></tr>
+                            <tr><th><a href="movieList.html?title=r">R</a></th></tr>
+                            <tr><th><a href="movieList.html?title=s">S</a></th></tr>
+                            <tr><th><a href="movieList.html?title=t">T</a></th></tr>
+                            <tr><th><a href="movieList.html?title=u">U</a></th></tr>
+                            <tr><th><a href="movieList.html?title=v">V</a></th></tr>
+                            <tr><th><a href="movieList.html?title=w">W</a></th></tr>
+                            <tr><th><a href="movieList.html?title=x">X</a></th></tr>
+                            <tr><th><a href="movieList.html?title=y">Y</a></th></tr>
+                            <tr><th><a href="movieList.html?title=z">Z</a></th></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <ul class="footer">
+                <li><a href="movieList.html">About Us</a></li>
+                <li><a href="movieList.html">Contact</a></li>
+                <li><a href="movieList.html">Careers</a></li>
+                <li><a href="movieList.html">Legal</a></li>
+                <li><a href="movieList.html">Help</a></li>
+            </ul>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+
+        <script src="mainPage.js"></script>
+    </body>
+</html>

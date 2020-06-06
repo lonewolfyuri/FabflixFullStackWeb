@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Fabflix Mobile</string>
+    <string name="url">https://10.0.2.2:8443/CS122B_war/api/</string>
+    <string name="search_for_titles">Search For Titles</string>
+    <string name="fabflix_main">Fabflix Main</string>
+    <string name="search">Search</string>
+    <string name="genres">Genres</string>
+    <string name="chris_nolan_2005_9_0_10">Chris Nolan - 2005 - 9.0 / 10</string>
+    <string name="the_dark_knight">The Dark Knight</string>
+    <string name="fabflix_movies">Fabflix Movies</string>
+    <string name="stars">Stars</string>
+    <string name="fabflix_stars">Fabflix Stars</string>
+    <string name="heath_ledger">Heath Ledger</string>
+    <string name="born_in_1979">Born in 1979</string>
+    <string name="movies">Movies</string>
+    <color name="red">#CC0000</color>
+</resources>

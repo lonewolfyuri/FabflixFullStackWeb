@@ -1,0 +1,1 @@
+Avg TS: 1.44524 sec. | Avg TJ: 1.44499 sec.

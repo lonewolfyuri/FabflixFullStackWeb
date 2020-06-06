@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent" android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MoviePageActivity"
+                tools:layout_editor_absoluteY="65dp" tools:layout_editor_absoluteX="156dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fabflix_movies"
+                android:id="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="50sp"/>
+
+        <TextView
+                android:text="@string/the_dark_knight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_title"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        <TextView
+                android:text="@string/chris_nolan_2005_9_0_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/director_year_rating"
+                android:layout_below="@+id/movie_title"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:text="@string/genres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genres"
+                android:layout_below="@+id/director_year_rating"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="25sp"/>
+
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genre_list"
+                android:layout_below="@+id/genres"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"/>
+
+        <TextView
+                android:text="@string/stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stars"
+                android:layout_below="@+id/genre_list"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="25sp"/>
+
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_list"
+                android:layout_below="@+id/stars"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"/>
+
+</RelativeLayout>

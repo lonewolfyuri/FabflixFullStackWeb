@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+    <!-- Defines a Data Source Connecting to localhost moviedb-->
+    <Resource name="jdbc/moviedb" auth="George Gabricht" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="5000"  username="root"
+              password="5282Scr!pt" driverClassName="com.mysql.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              url="jdbc:mysql://localhost:3306/moviedb?autoReconnect=true&amp;cachePrepStmts=true"/>
+
+    <Resource name="jdbc/master/moviedb" auth="George Gabricht" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="5000"  username="mytestuser"
+              password="5282Scr!pt" driverClassName="com.mysql.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              url="jdbc:mysql://3.134.85.31:3306/moviedb?autoReconnect=true&amp;cachePrepStmts=true"/>
+
+    <Resource name="jdbc/slave/moviedb" auth="George Gabricht" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="5000"  username="mytestuser"
+              password="5282Scr!pt" driverClassName="com.mysql.jdbc.Driver"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              url="jdbc:mysql://18.191.89.131:3306/moviedb?autoReconnect=true&amp;cachePrepStmts=true"/>
+</Context>

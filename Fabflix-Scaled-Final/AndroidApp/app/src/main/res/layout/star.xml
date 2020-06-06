@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent" android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".StarPageActivity"
+                tools:layout_editor_absoluteY="65dp" tools:layout_editor_absoluteX="156dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fabflix_stars"
+                android:id="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="50sp"/>
+
+        <TextView
+                android:text="@string/heath_ledger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/star_name"
+                android:layout_below="@+id/title"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        <TextView
+                android:text="@string/born_in_1979"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/birth_year"
+                android:layout_below="@+id/star_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="40sp"/>
+
+        <TextView
+                android:text="@string/movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movies"
+                android:layout_below="@+id/birth_year"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/red"
+                android:textSize="35sp"/>
+
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_list"
+                android:layout_below="@+id/movies"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="resources/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Fabflix Confirmation</title>
+</head>
+<body>
+<div>
+    <ul class="nav_bar">
+        <li class="logo"><a href="mainPage.html"><img src="resources/Fabflix Logo.png" alt="Fabflix Logo"></a></li>
+        <li class="home"><a href="mainPage.html">Home</a></li>
+        <li class="movie_list"><a href="movieList.html?past=true">Movies</a></li>
+        <li class="search_bar"><form id="search" action="movieList.html"><input type="text" placeholder=" Search . . . " id="autocomplete" name="search_input" onkeypress="handleSearch"></form></li>
+        <li class="log_out"><a href="logout.html">Log Out</a></li>
+        <li class="account"><a href="account.html">Account</a></li>
+        <li class="cart"><a href="cart.html">Cart</a></li>
+    </ul>
+</div>
+
+<div class="first">
+    <h1 id=main_header class="center">Confirmation</h1>
+    <br>
+    <br>
+    <h2 id="confirmation_header"></h2>
+
+    <div>
+        <hr>
+    </div>
+
+    <table id=cart_table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Movie Title</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        </thead>
+        <tbody id=cart_list_body></tbody>
+    </table>
+
+    <div>
+        <hr>
+    </div>
+
+    <table id="total_table" class="table table-striped">
+        <thead>
+        <tr>
+            <th>Number of Items</th>
+            <th>Subtotal</th>
+            <th>Tax</th>
+            <th>Total</th>
+        </tr>
+        </thead>
+        <tbody id="total_list_body"></tbody>
+    </table>
+</div>
+
+<div class="footer">
+    <ul class="footer">
+        <li><a href="movieList.html">About Us</a></li>
+        <li><a href="movieList.html">Contact</a></li>
+        <li><a href="movieList.html">Careers</a></li>
+        <li><a href="movieList.html">Legal</a></li>
+        <li><a href="movieList.html">Help</a></li>
+    </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+
+<script src="confirmation.js"></script>
+</body>
+</html>

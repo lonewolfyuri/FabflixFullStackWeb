@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" type="image/png" href="resources/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>FabFlix Movie List</title>
+    </head>
+    <body>
+        <div>
+            <ul class="nav_bar">
+                <li class="logo"><a href="mainPage.html"><img src="resources/Fabflix Logo.png" alt="Fabflix Logo"></a></li>
+                <li class="home"><a href="mainPage.html">Home</a></li>
+                <li class="movie_list"><a href="movieList.html?past=true">Movies</a></li>
+                <li class="search_bar"><form id="search" action="movieList.html"><input type="text" placeholder=" Search . . . " id="autocomplete" name="search_input" onkeypress="handleSearch"></form></li>
+                <li class="log_out"><a href="logout.html">Log Out</a></li>
+                <li class="account"><a href="account.html">Account</a></li>
+                <li class="cart"><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+
+        <div class="first">
+            <div class="refining">
+                <div class="sorting">
+                    <h1 class="main_header">Sorting</h1>
+                    <select id="sorter">
+                        <option value=0 selected>Title ASC | Rating ASC</option>
+                        <option value=1>Title ASC | Rating DESC</option>
+                        <option value=2>Title DESC | Rating ASC</option>
+                        <option value=3>Title DESC | Rating DESC</option>
+                        <option value=4>Rating ASC | Title ASC</option>
+                        <option value=5>Rating ASC | Title DESC</option>
+                        <option value=6>Rating DESC | Title ASC</option>
+                        <option value=7>Rating DESC | Title DESC</option>
+                    </select>
+                </div>
+                <div class="navigation">
+                    <h1 class="main_header" id="page_header"></h1>
+                    <div class="prev_next">
+                        <button id="prev">Prev</button>
+                        <button id="next">Next</button>
+                    </div>
+                </div>
+                <div class="limiting">
+                    <h1 class="main_header">Page Size</h1>
+                    <select id="size">
+                        <option value=10>10</option>
+                        <option value=25 selected>25</option>
+                        <option value=50>50</option>
+                        <option value=100>100</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <hr>
+            </div>
+
+            <h1 class="main_header" id="movie_header">Movie List</h1>
+
+            <table id=movie_table class="table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Director</th>
+                        <th colspan="3">Genre(s)</th>
+                        <th colspan="3">Star(s)</th>
+                        <th>Rating</th>
+                        <th>Price</th>
+                        <th>Purchase</th>
+                    </tr>
+                </thead>
+                <tbody id="movie_list_body"></tbody>
+            </table>
+        </div>
+
+        <div>
+            <h1 class="main_header" id="page_footer"></h1>
+            <div class="prev_next">
+                <button id="prev2">Prev</button>
+                <button id="next2">Next</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <ul class="footer">
+                <li><a href="movieList.html">About Us</a></li>
+                <li><a href="movieList.html">Contact</a></li>
+                <li><a href="movieList.html">Careers</a></li>
+                <li><a href="movieList.html">Legal</a></li>
+                <li><a href="movieList.html">Help</a></li>
+            </ul>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+
+        <script src="movieList.js"></script>
+    </body>
+</html>
